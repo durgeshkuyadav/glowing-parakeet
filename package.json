@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "test": "npm --prefix frontend run build"
+  },
+  "workspaces": ["frontend"]
+}
