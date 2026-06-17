@@ -1,0 +1,3 @@
+package com.avyahome.crm.controller;
+import com.avyahome.crm.entity.DomainEnums;import org.springframework.web.bind.annotation.*;import java.util.*;
+@RestController @RequestMapping("/catalog") public class CrmCatalogController{@GetMapping Map<String,Object> catalog(){return Map.of("roles",DomainEnums.Role.values(),"projectStatuses",DomainEnums.ProjectStatus.values(),"plotStatuses",DomainEnums.PlotStatus.values(),"paymentModes",List.of("RTGS","NEFT","IMPS","Cash","Cheque","Online"),"incomeTypes",List.of("Self Income","Level Income","Leadership Income","Royalty Income","Monthly Bonus","Advance Bonus"));}}

@@ -1,0 +1,2 @@
+package com.avyahome.crm.entity;
+public final class DomainEnums{private DomainEnums(){} public enum Role{SUPER_ADMIN,MANAGER,ASSOCIATE,SUB_ASSOCIATE} public enum ProjectStatus{ACTIVE,COMPLETED,ARCHIVED} public enum PlotStatus{AVAILABLE,HOLD,BOOKED,SOLD_OUT} public enum PaymentStatus{RECEIVED,PENDING,BOUNCED,CANCELLED} public enum PayoutStatus{PENDING,REVIEWED,APPROVED,PAID} public enum LeadStage{NEW_LEAD,CONTACTED,INTERESTED,SITE_VISIT_SCHEDULED,NEGOTIATION,CONVERTED,LOST}}

@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/avya_home_crm}
+    username: ${SPRING_DATASOURCE_USERNAME:avya}
+    password: ${SPRING_DATASOURCE_PASSWORD:change-me}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+security:
+  jwt:
+    secret: ${JWT_SECRET:dev-secret-dev-secret-dev-secret-dev-secret-dev-secret-dev-secret}
+    access-token-minutes: 30
+    refresh-token-days: 7
