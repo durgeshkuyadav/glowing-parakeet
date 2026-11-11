@@ -1,0 +1,6 @@
+export const roles=['SUPER_ADMIN','MANAGER','ASSOCIATE','SUB_ASSOCIATE'] as const;
+export const plotStatuses={Available:'bg-emerald-500',Hold:'bg-amber-400',Booked:'bg-blue-500','Sold Out':'bg-red-500'};
+export const metrics=[['Total Revenue','₹14.8Cr'],['Monthly Revenue','₹82.4L'],["Today's Collection",'₹6.2L'],['Pending Collection','₹31.9L'],['Total Associates','1,284'],['Direct Associates','186'],['Team Members','7,942'],['Total Customers','3,620'],['Active Customers','2,907'],['Available Plots','418'],['Booked Plots','196'],['Sold Plots','1,042'],['Pending Payouts','₹12.7L'],['Completed Payouts','₹2.1Cr']];
+export const modules=['Associate Management','Customer KYC','Project Management','Visual Plot Map','Booking Management','Payment Receipts','Commission Rules','Bonus Management','Payout Processing','TDS Reports','Analytics','Audit Logs','Settings','Support Tickets','File Management'];
+export const leadStages=['New Lead','Contacted','Interested','Site Visit Scheduled','Negotiation','Converted','Lost'];
+export const chartData=['Jan','Feb','Mar','Apr','May','Jun'].map((m,i)=>({month:m,revenue:[32,45,51,64,72,82][i],business:[22,35,38,52,61,70][i],team:[40,62,83,108,139,186][i],plots:[18,29,34,42,49,57][i]}));

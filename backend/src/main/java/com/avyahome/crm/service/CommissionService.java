@@ -1,0 +1,3 @@
+package com.avyahome.crm.service;
+import org.springframework.stereotype.Service;import java.math.*;
+@Service public class CommissionService{public BigDecimal selfIncome(BigDecimal payment,BigDecimal rate){return payment.multiply(rate).divide(BigDecimal.valueOf(100),2,RoundingMode.HALF_UP);} public BigDecimal tds(BigDecimal gross, boolean hasPan){return gross.multiply(hasPan?BigDecimal.valueOf(0.05):BigDecimal.valueOf(0.20)).setScale(2,RoundingMode.HALF_UP);} public BigDecimal netPayable(BigDecimal gross,BigDecimal bonus,BigDecimal adminCharge,boolean hasPan){BigDecimal total=gross.add(bonus);return total.subtract(tds(total,hasPan)).subtract(adminCharge).setScale(2,RoundingMode.HALF_UP);}}

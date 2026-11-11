@@ -1,0 +1,1 @@
+package com.avyahome.crm.repository;import com.avyahome.crm.entity.Associate;import org.springframework.data.jpa.repository.JpaRepository;public interface AssociateRepository extends JpaRepository<Associate,Long>{}
